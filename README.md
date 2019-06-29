@@ -79,11 +79,11 @@ Number and name of feature: Display images
 
 Estimate of time needed to complete: 20 min
 
-Start time: _____
+Start time: n/a on and off
 
-Finish time: _____
+Finish time: n/a on and off
 
-Actual time needed to complete: _____
+Actual time needed to complete: 20 min
 ```
 
 ### Feature #2: Filter images
@@ -104,15 +104,15 @@ Then only the images whose keyword matches the option should be displayed
 - Use an event handler to respond when the user chooses an option from the select menu. Hide all of the images, then show those whose keyword matches the option chosen.
 
 ```
-Number and name of feature: ________________________________
+Number and name of feature: Filter images
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 20 min
 
-Start time: _____
+Start time: 12:33pm
 
-Finish time: _____
+Finish time: 12:48pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 15 min
 ```
 
 ### Feature #3: Style the application
@@ -131,6 +131,19 @@ Then the images should be displayed in rows across the screen
 
 - Style your application using floats.
 - Utilize at least one Google font.
+
+
+```
+Number and name of feature: Filter images
+
+Estimate of time needed to complete: 20 min
+
+Start time: 12:48pm
+
+Finish time: 1:15pm
+
+Actual time needed to complete: 28 min
+```
 
 ### Stretch Goal: Sort the images
 
