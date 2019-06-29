@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+img {
+  height: 100px;
+  width: 80px;
+}
+
+div {
+  width: 20%;
+  float: left;
+}
+
+footer {
+  clear: both;
+}

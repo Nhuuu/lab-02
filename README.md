@@ -75,9 +75,9 @@ Then the photo gallery should display all of the images in the gallery
 - Use jQuery to make a copy of the HTML template of the photo component. For each object, fill in the duplicated template with its properties, then append the copy to the DOM.
 
 ```
-Number and name of feature: ________________________________
+Number and name of feature: Display images
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 20 min
 
 Start time: _____
 
