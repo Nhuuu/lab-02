@@ -1,7 +1,6 @@
 'use strict';
 
 /*
-Style your application using floats.
 Utilize at least one Google font.
 */
 
@@ -43,6 +42,7 @@ PhotoObj.readJson = () => {
 
 PhotoObj.loadPhotos = () => {
   PhotoObj.allPhotos.forEach(photo => photo.render());
+  $('#photo-template').hide();
 };
 
 $(() => PhotoObj.readJson());
