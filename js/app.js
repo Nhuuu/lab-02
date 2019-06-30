@@ -1,9 +1,5 @@
 'use strict';
 
-/*
-Utilize at least one Google font.
-*/
-
 function PhotoObj(photo) {
   this.image_url = photo.image_url;
   this.title = photo.title;
@@ -41,7 +37,11 @@ PhotoObj.readJson = () => {
 };
 
 PhotoObj.loadPhotos = () => {
-  PhotoObj.allPhotos.forEach(photo => photo.render());
+  // TODO: sort the array by titles first
+  let sortedPhotos = PhotoObj.allPhotos.sort((a, b) => {
+    return a, b;
+  });
+  sortedPhotos.forEach(photo => photo.render());
   $('#photo-template').hide();
 };
 

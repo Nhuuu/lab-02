@@ -4,6 +4,7 @@ select {
 }
 
 img {
-  height: 100px;
-  width: 80px;
+  height: 200px;
+  width: 150px;
+  margin: 10px auto;
 }
