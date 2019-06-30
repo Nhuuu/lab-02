@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Alegreya', serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  margin: 0 10%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin-bottom: 80px;
+}
+
+footer {
+  clear: both;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(219, 203, 203);
+  height: 50px;
+  line-height: 50px;
+}

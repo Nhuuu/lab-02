@@ -1,0 +1,10 @@
+select {
+  font-size: 26px;
+  color: rgb(31, 49, 31);
+}
+
+img {
+  height: 200px;
+  width: 150px;
+  margin: 10px auto;
+}
