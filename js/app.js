@@ -1,6 +1,6 @@
 'use strict';
 
-let dataFile = '../data/page-1.json';
+let dataFile = 'data/page-1.json';
 
 function PhotoObj(photo) {
   this.image_url = photo.image_url;
