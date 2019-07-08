@@ -1,5 +1,7 @@
 'use strict';
 
+let dataFile = 'data/page-1.json';
+
 function PhotoObj(photo) {
   this.image_url = photo.image_url;
   this.title = photo.title;
@@ -27,7 +29,7 @@ PhotoObj.prototype.render = function(){
 };
 
 PhotoObj.readJson = () => {
-  $.get('../data/page-1.json', 'json')
+  $.get(dataFile, 'json')
     .then(data => {
       data.forEach(p => {
         PhotoObj.allPhotos.push(new PhotoObj(p));
