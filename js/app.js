@@ -41,7 +41,7 @@ PhotoObj.readJson = () => {
 PhotoObj.loadPhotos = () => {
   // TODO: sort the array by titles first
   let sortedPhotos = PhotoObj.allPhotos.sort((a, b) => {
-    return a, b;
+    return a - b;
   });
   sortedPhotos.forEach(photo => photo.render());
   $('#photo-template').hide();
