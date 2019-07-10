@@ -11,13 +11,13 @@ body {
 
 main {
   margin: 0 10%;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 80px;
 }
 
 footer {
-  clear: both;
   position: fixed;
   bottom: 0;
   left: 0;

@@ -9,9 +9,10 @@ header {
 }
 
 #photo {
-  float: left;
   border: 1px dashed black;
   height: 300px;
+  width: 300px;
   padding: 15px;
   margin: 20px 30px;
+  font-size: .8em;
 }
