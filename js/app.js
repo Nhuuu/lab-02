@@ -12,21 +12,13 @@ function PhotoObj(photo) {
 
 PhotoObj.allPhotos = [];
 
-PhotoObj.prototype.render = function(){
-  $('main').append('<div class="clone"></div>');
-  let photoClone = $('div[class="clone"]');
-
-  let photoHtml = $('#photo-template').html();
-
-  photoClone.html(photoHtml);
-
-  photoClone.find('h2').text(this.title);
-  photoClone.find('img').attr('src', this.image_url)
-  photoClone.find('p.description').text(this.description);
-  photoClone.find('p.horns').text(this.horns);
-  photoClone.removeClass('clone');
-  photoClone.attr('class', this.keyword);
+PhotoObj.prototype.renderWithHandleBars = function(){
+  const source = $('#photo-template').html();
+  const template = Handlebars.compile(source);
+  const html = template(this);
+  $('#photos').append(html);
 };
+
 
 PhotoObj.readJson = () => {
   $.get(dataFile, 'json')
@@ -39,18 +31,22 @@ PhotoObj.readJson = () => {
 };
 
 PhotoObj.loadPhotos = () => {
-  // TODO: sort the array by titles first
   let sortedPhotos = PhotoObj.allPhotos.sort((a, b) => {
-    return a - b;
-  });
-  sortedPhotos.forEach(photo => photo.render());
-  $('#photo-template').hide();
+    if(a.title.toUpperCase() < b.title.toUpperCase()){
+      return -1;
+    } else if (a.title.toUpperCase() === b.title.toUpperCase()){
+      return 0;
+    } else {
+      return 1;
+    }
+  })
+  sortedPhotos.forEach(photo => photo.renderWithHandleBars());
 };
 
 $(() => PhotoObj.readJson());
 
 $('select[name="creatures"]').on('change', function(){
   let $selection = $(this).val();
-  $('div').hide(); // hides all div tags
-  $(`div[class="${$selection}"]`).show();
+  $('section').hide(); 
+  $(`section[class="${$selection}"]`).show();
 });
