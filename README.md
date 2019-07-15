@@ -163,16 +163,54 @@ Then the images should be sorted accordingly
 - Sort the images by one of the properties on page load. This should also apply to the second page of images. 
 
 ```
-Number and name of feature: ________________________________
+Number and name of feature: Sort the images
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 25 min
 
-Start time: _____
+Start time: 10:00am
 
-Finish time: _____
+Finish time: 10:30am
 
-Actual time needed to complete: _____
+Actual time needed to complete: 30 min
 ```
+
+```
+Number and name of feature: Pagination
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 5:15pm
+
+Finish time: 7:15pm
+
+Actual time needed to complete: 2 hours
+```
+
+```
+Number and name of feature: Templating
+
+Estimate of time needed to complete: 25 min
+
+Start time: 4:00pm
+
+Finish time: 4:20pm
+
+Actual time needed to complete: 20 min
+```
+
+```
+Number and name of feature: Styling with Flexbox
+
+Estimate of time needed to complete: 20 min
+
+Start time: 4:40pm
+
+Finish time: 5:00pm
+
+Actual time needed to complete: 20 min
+```
+
+
 
 ## Submission Instructions
 
